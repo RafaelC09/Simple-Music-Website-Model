@@ -12,3 +12,101 @@ header img {
 header h1 {
     font-size: 64px;
 }
+
+#searchBar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+.player-container {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.player-info {
+    margin-top: 10px;
+}
+
+#songTitle {
+    font-size: 18px;
+    margin: 0;
+}
+
+.player-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+input[type="range"] {
+    width: 150px;
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 5px;
+    cursor: pointer;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+#currentTime {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.volume-control {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.volume-control label {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+}
