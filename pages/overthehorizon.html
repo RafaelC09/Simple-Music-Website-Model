@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div class="background-1"></div>
+
     <div class="player-container">
         <audio id="overthehorizon">
             <source src="../songs/Over_the_Horizon.mp3" type="audio/mp3">
         </audio>
+    </div>
+
+    <div class="player-info">
+        <h1 id="songTitle">Over The Horizon</h1>
+        <h2 id="songSinger">2Pac</h2>
+        <p id="songAlbum">Album: Samsung Themes - 2023</p>
+        <p id="songStyle">Style: Instrumental</p>
+    </div>
+
+    <div class="player-albumimg">
+        <img src="../images/overthehorizonimage.jpg" alt="albumImage" width="300px">
     </div>
 
     <div class="player-controls">
@@ -20,12 +33,8 @@
     </div>
 
     <div class="volume-control">
-        <label for="volume">Volume</label>
+        <label for="volume" id="btnvolume">Volume</label>
         <input type="range" id="volume" value="100" max="100" step="1">
-    </div>
-
-    <div class="player-info">
-        <h2 id="songTitle">Over The Horizon</h2>
     </div>
 
     <script src="../js/script.js"></script>
