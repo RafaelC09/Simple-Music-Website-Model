@@ -11,18 +11,23 @@
     <header>
         <img src="images/spotify.png" alt="SpotifyImage">
         <h1>Spotify</h1>
+        <button id="create-account-btn" class="create-account-btn" onclick="window.location.href='pages/create-account.html'">Sign up</button>
     </header>
     <main>
         <h2>"Music is everyone's possession. Only advertisers think people own it."</h2>
     </main>
     <div id="BarSearch">
+        <img src="../SpotifyModel/images/glass.png" alt="glass" id="glass">
         <input type="text" id="searchBar" placeholder="Type for search..." onkeyup="filterItems()">
     </div>
     <div id="Items">
         <ul id="listitems">
-            <a href="index.html">Home</a><br>
-            <a href="pages/singers.html">Singers</a><br>
-            <a href="pages/musics.html">Musics</a>
+            <a href="pages/artists.html">
+                <button>Artists</button><br><br>
+            </a>
+            <a href="pages/musics.html">
+                <button>Musics</button>
+            </a>
         </ul>
     </div>
     <script src="js/script.js"></script>

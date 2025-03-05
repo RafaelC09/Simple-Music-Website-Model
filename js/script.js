@@ -46,3 +46,21 @@ seekbar.addEventListener("input", () => {
 volumeControl.addEventListener("input", () => {
     audio.volume = volumeControl.value / 100;
 });
+
+document.getElementById('create-account-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (username && email && password) {
+        document.getElementById('message').textContent = `Account created with success for ${username}!`;
+        document.getElementById('message').style.color = 'green';
+
+        document.getElementById('create-account-form').reset();
+    } else {
+        document.getElementById('message').textContent = 'Please, fill all the spaces!';
+        document.getElementById('message').style.color = 'red';
+    }
+});

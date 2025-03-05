@@ -11,6 +11,12 @@ header img {
 
 header h1 {
     font-size: 64px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main h2 {
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #searchBar {
@@ -21,6 +27,23 @@ header h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px auto;
+}
+
+#Items button {
+    background-color: greenyellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    width: 250px;
+    height: 75px;
+}
+
+#Items button:hover {
+    background-color: green;
+}
+
+#glass {
+    width: 25px;
+    height: 25px;
 }
 
 ul {
@@ -63,7 +86,7 @@ li {
     margin-top: 20px;
 }
 
-button {
+.player-controls button {
     background-color: cornflowerblue;
     color: white;
     border: none;
@@ -74,7 +97,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.player-controls button:hover {
     background-color: blue;
 }
 
@@ -139,4 +162,113 @@ input[type="range"]:focus {
 
 #songTitle {
     font-size: 50px;
+}
+
+.tupac {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tupac img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.textcontent {
+    max-width: 400px;
+}
+
+.textcontent h3 {
+    margin: 0;
+}
+
+.textcontent p {
+    margin: 5px 0;
+}
+
+#Profile1Btn {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#Profile1Btn:hover {
+    background-color: gray;
+}
+
+.account-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cbh1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btnsubmit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#btnsubmit:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 15px;
+    color: red;
+}
+
+.create-account-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.create-account-btn:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn:focus {
+    outline: none;
 }
