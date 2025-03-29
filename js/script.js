@@ -54,6 +54,8 @@ document.getElementById('create-account-form').addEventListener('submit', functi
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
+    console.log("Request sent!")
+
     if (username && email && password) {
         document.getElementById('message').textContent = `Account created with success for ${username}!`;
         document.getElementById('message').style.color = 'green';

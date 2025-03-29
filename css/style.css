@@ -19,6 +19,31 @@ main h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.dark-mode {
+    background-color: #111111;
+    color: white;
+}
+
+#toggle-theme {
+    position: fixed;
+    top: 0;
+    right: 125px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+}
+
+#toggle-theme:hover {
+    background-color: #45a049;
+}
+
 #searchBar {
     width: 100%;
     max-width: 400px;
@@ -30,7 +55,7 @@ main h2 {
 }
 
 #Items button {
-    background-color: greenyellow;
+    background-color: #4CAF50;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32px;
     width: 250px;
@@ -38,7 +63,7 @@ main h2 {
 }
 
 #Items button:hover {
-    background-color: green;
+    background-color: #45a049;
 }
 
 #glass {
@@ -188,6 +213,43 @@ input[type="range"]:focus {
     margin: 5px 0;
 }
 
+.ovhpage {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ovhpage img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.textcontent2 {
+    max-width: 400px;
+}
+
+.textcontent2 h3 {
+    margin: 0;
+}
+
+.textcontent2 p {
+    margin: 5px 0;
+}
+
+#ovhtppgbtn {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#ovhtppgbtn:hover {
+    background-color: gray;
+}
+
 #Profile1Btn {
     padding: 5px 10px;
     background-color: black;
@@ -246,8 +308,10 @@ input[type="password"] {
 }
 
 #message {
-    margin-top: 15px;
-    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    height: auto;
 }
 
 .create-account-btn {
@@ -259,7 +323,7 @@ input[type="password"] {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
@@ -271,4 +335,13 @@ input[type="password"] {
 
 .create-account-btn:focus {
     outline: none;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
