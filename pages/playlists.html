@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <a href="https://www.spotify.com/pt-pt/download/windows/"><button id="download-app-btn6">Download App</button></a>
+    <button id="toggle-theme6">Dark Mode</button>
+    <button id="create-account-btn6" class="create-account-btn6" onclick="window.location.href='create-account.html'">Sign up</button>
     <h1>Playlists</h1>
-    <button id="createplaylistbtn">+</button>
+    <button id="createplaylistbtn" onclick="showText()">+</button>
+    <p id="error001">You dont have account, so you cant create a playlist!</p>
     <div class="playlist1">
         <img src="../images/spotifyimage.jpg" alt="playlist1img" id="playlist1img">
         <div class="textcontent3">
@@ -21,5 +25,6 @@
         </div>
     </div>
     <script src="../js/script.js"></script>
+    <script src="../js/darkmode/darkmode6.js"></script>
 </body>
 </html>

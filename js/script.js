@@ -1,31 +1,17 @@
-function filterItems() {
-    let input = document.getElementById("searchBar").value.toLowerCase();
-    let list = document.getElementById("listitems");
-    let items = list.getElementsByTagName("a");
-
-    for (let i = 0; i < items.length; i++) {
-        let item = items[i].innerText.toLowerCase();
-        if (item.includes(input)) {
-            items[i].classList.remove("hidden");
-        } else {
-            items[i].classList.add("hidden");
-        }
-    }
-}
-
 const audio = document.getElementById("overthehorizon");
 const button = document.getElementById("playPauseBtn");
 const seekbar = document.getElementById("seekbar");
 const currentTime = document.getElementById("currentTime");
 const volumeControl = document.getElementById("volume");
+let error001 = document.getElementById("error001")
 
 button.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
-        button.textContent = "⏸️";
+        button.textContent = "⏸";
     } else {
         audio.pause();
-        button.textContent = "▶️";
+        button.textContent = "▶";
     }
 });
 
@@ -66,3 +52,9 @@ document.getElementById('create-account-form').addEventListener('submit', functi
         document.getElementById('message').style.color = 'red';
     }
 });
+
+function showText() {
+    error001.style.visibility = 'visible'
+}
+
+

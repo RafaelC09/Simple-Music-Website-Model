@@ -8,22 +8,22 @@
 </head>
 <body>
     <main>
-        <h1>Popular Artists</h1>
-    </main>
-    <div id="BarSearch">
-        <img src="../images/glass.png" alt="glass" id="glass">
-        <input type="text" id="searchBar" placeholder="Type for search..." onkeyup="filterItems()">
+        <h1 id="h1artists">Popular Artists</h1>
+        <a href="https://www.spotify.com/pt-pt/download/windows/"><button id="download-app-btn2">Download App</button></a>
+        <button id="toggle-theme2">Dark Mode</button>
+        <button id="create-account-btn2" class="create-account-btn2" onclick="window.location.href='create-account.html'">Sign up</button>
     </div>
+    </main>
     <div class="tupac">
-        <img src="../images/2Pac.jpg" alt="2Pac" id="tupacImg">
+        <a href="tupac.html">
+            <img src="../images/2Pac.jpg" alt="2Pac" id="tupacImg">
+        </a>
         <div class="text-content">
             <h3 class="text1">2Pac</h3>
-            <p class="text2">Rapper. Actor. Activist. Thug. Poet. Rebel. Visionary.</p>
-            <a href="tupac.html" class="button1">
-                <button id="Profile1Btn">Profile</button>
-            </a>
         </div>
     </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/darkmode/darkmode2.js"></script>
 </body>
 </html>
 <style>

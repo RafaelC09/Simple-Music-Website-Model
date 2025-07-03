@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="background-1"></div>
-
+    <a href="https://www.spotify.com/pt-pt/download/windows/"><button id="download-app-btn4">Download App</button></a>
+    <button id="toggle-theme4">Dark Mode</button>
+    <button id="create-account-btn4" class="create-account-btn4" onclick="window.location.href='create-account.html'">Sign up</button>
     <div class="player-container">
         <audio id="overthehorizon">
             <source src="../songs/Over_the_Horizon.mp3" type="audio/mp3">
@@ -16,18 +17,19 @@
     </div>
 
     <div class="player-info">
+        <div class="player-albumimg">
+            <img src="../images/overthehorizonimage.jpg" alt="albumImage" width="300px">
+        </div>
         <h1 id="songTitle">Over The Horizon</h1>
+    </div>
+    <div class="player-info2">
         <h2 id="songSinger">2Pac</h2>
         <p id="songAlbum">Album: Samsung Themes - 2023</p>
         <p id="songStyle">Style: Instrumental</p>
     </div>
 
-    <div class="player-albumimg">
-        <img src="../images/overthehorizonimage.jpg" alt="albumImage" width="300px">
-    </div>
-
     <div class="player-controls">
-        <button id="playPauseBtn">▶️</button>
+        <button id="playPauseBtn">▶</button>
         <input type="range" id="seekbar" value="0" max="100" step="0.1">
         <div id="currentTime">00:00</div>
     </div>
@@ -38,6 +40,7 @@
     </div>
 
     <script src="../js/script.js"></script>
+    <script src="../js/darkmode/darkmode4.js"></script>
 </body>
 </html>
 <style>

@@ -81,26 +81,6 @@ main h2 {
     background-color: #45a049;
 }
 
-#BarSearch {
-    position: absolute;
-    top: 30%;
-    left: 23%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-#searchBar {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 20px auto;
-}
-
 #Items {
     position: absolute;
     top: 55%;
@@ -251,6 +231,24 @@ li {
 
 .player-info {
     margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.player-info2 {
+    position: absolute;
+    left: 17.3%;
+    top: 13%;
+}
+
+.player-info2 h2 {
+    margin-bottom: -5%;
+    font-size: 28px;
+}
+
+.player-info2 p {
+    margin-bottom: -5%;
+    font-size: 18px;
 }
 
 #songTitle {
@@ -260,6 +258,7 @@ li {
 
 .player-controls {
     display: flex;
+    align-items: center;
     gap: 15px;
     margin-top: 20px;
 }
@@ -273,10 +272,13 @@ li {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
 }
 
 .player-controls button:hover {
-    background-color: blue;
+    background-color: rgb(81, 133, 230);
 }
 
 input[type="range"] {
@@ -321,21 +323,9 @@ input[type="range"]:focus {
     align-items: center;
     gap: 20px;
     background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.background-1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../images/background-1.jpg") no-repeat center center/cover; /*Put the background image for the page of the music*/
-    opacity: 0.5;
-    z-index: -1;
 }
 
 #songTitle {
@@ -343,15 +333,27 @@ input[type="range"]:focus {
 }
 
 .tupac {
+    position: absolute;
+    top: 10%;
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 15px;
+    flex-direction: column;
 }
 
 .tupac img {
     width: 150px;
     height: 150px;
     border-radius: 5px;
+}
+
+.tupac img:first-child {
+    margin-bottom: -15%;
+}
+
+.tupac h3 {
+    margin-bottom: 5%;
+    font-family: 'Copperplate', fantasy;
 }
 
 .textcontent {
@@ -373,8 +375,8 @@ input[type="range"]:focus {
 }
 
 .ovhpage img {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     border-radius: 5px;
 }
 
@@ -388,32 +390,6 @@ input[type="range"]:focus {
 
 .textcontent2 p {
     margin: 5px 0;
-}
-
-#ovhtppgbtn {
-    padding: 5px 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-#ovhtppgbtn:hover {
-    background-color: gray;
-}
-
-#Profile1Btn {
-    padding: 5px 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-#Profile1Btn:hover {
-    background-color: gray;
 }
 
 .account-container {
@@ -501,8 +477,8 @@ input[type="password"] {
 
 #createplaylistbtn {
     padding: 5px 10px;
-    background-color: gray;
-    color: white;
+    background-color: #4CAF50;
+    color: black;
     border: none;
     cursor: pointer;
     border-radius: 3px;
@@ -514,7 +490,7 @@ input[type="password"] {
 }
 
 #createplaylistbtn:hover {
-    background-color: #565656;
+    background-color: #45a049;
 }
 
 .playlist1 {
@@ -571,4 +547,473 @@ input[type="password"] {
 
 #playlistsfirstbtn:hover {
     background-color: #45a049;
+}
+
+.create-account-btn2 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.create-account-btn2:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn2:focus {
+    outline: none;
+}
+
+.dark-mode2 {
+    background-color: #111111;
+    color: white;
+}
+
+#toggle-theme2 {
+    position: fixed;
+    top: 0;
+    right: 125px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#toggle-theme2:hover {
+    background-color: #45a049;
+}
+
+#download-app-btn2 {
+    position: fixed;
+    top: 0;
+    right: 255px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#download-app-btn2:hover {
+    background-color: #45a049;
+}
+
+#tupachispageimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+#TupacPage {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    font-family: 'Copperplate', fantasy;
+}
+
+.play-button2 {
+    position: absolute;
+    top: 31%;
+    bottom: 10px;
+    left: 3.8%;
+    background-color: #4CAF50;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.play-button2::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.music-card2:hover .play-button2 {
+    opacity: 1;
+}
+
+#bar3 {
+    background-color: #565656;
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+}
+
+#popularmusics {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.abouthim h2 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.create-account-btn3 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.create-account-btn3:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn3:focus {
+    outline: none;
+}
+
+.dark-mode3 {
+    background-color: #111111;
+    color: white;
+}
+
+#toggle-theme3 {
+    position: fixed;
+    top: 0;
+    right: 125px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#toggle-theme3:hover {
+    background-color: #45a049;
+}
+
+#download-app-btn3 {
+    position: fixed;
+    top: 0;
+    right: 255px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#download-app-btn3:hover {
+    background-color: #45a049;
+}
+
+#h1artists {
+    text-decoration: underline;
+}
+
+.create-account-btn4 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.create-account-btn4:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn4:focus {
+    outline: none;
+}
+
+.dark-mode4 {
+    background-color: #111111;
+    color: white;
+}
+
+#toggle-theme4 {
+    position: fixed;
+    top: 0;
+    right: 125px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#toggle-theme4:hover {
+    background-color: #45a049;
+}
+
+#download-app-btn4 {
+    position: fixed;
+    top: 0;
+    right: 255px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#download-app-btn4:hover {
+    background-color: #45a049;
+}
+
+#ovhindexx {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#ovhindexdivx {
+    position: absolute;
+    display: flex;
+    align-items: left;
+    align-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#ovhindexdivx img:first-child {
+    margin-bottom: -15px;
+}
+
+#ovhindexdivx h3 {
+    font-family: 'Copperplate', fantasy;
+    margin-bottom: -15px;
+}
+
+#ovhindexdivx p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.play-buttonx {
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    background-color: #4CAF50;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.play-buttonx::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.music-cardx:hover .play-buttonx {
+    opacity: 1;
+}
+
+.create-account-btn5 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.create-account-btn5:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn5:focus {
+    outline: none;
+}
+
+.dark-mode5 {
+    background-color: #111111;
+    color: white;
+}
+
+#toggle-theme5 {
+    position: fixed;
+    top: 0;
+    right: 125px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#toggle-theme5:hover {
+    background-color: #45a049;
+}
+
+#download-app-btn5 {
+    position: fixed;
+    top: 0;
+    right: 255px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#download-app-btn5:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn6 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.create-account-btn6:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn6:focus {
+    outline: none;
+}
+
+.dark-mode6 {
+    background-color: #111111;
+    color: white;
+}
+
+#toggle-theme6 {
+    position: fixed;
+    top: 0;
+    right: 125px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#toggle-theme6:hover {
+    background-color: #45a049;
+}
+
+#download-app-btn6 {
+    position: fixed;
+    top: 0;
+    right: 255px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#download-app-btn6:hover {
+    background-color: #45a049;
+}
+
+#error001 {
+    color: red;
+    visibility: hidden;
 }
