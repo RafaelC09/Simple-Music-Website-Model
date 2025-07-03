@@ -10,28 +10,46 @@
 <body>
     <header>
         <img src="images/spotify.png" alt="SpotifyImage">
-        <h1>Spotify</h1>
+        <a href="https://www.spotify.com/pt-pt/download/windows/"><button id="download-app-btn">Download App</button></a>
+        
         <button id="toggle-theme">Dark Mode</button>
         <button id="create-account-btn" class="create-account-btn" onclick="window.location.href='pages/create-account.html'">Sign up</button>
     </header>
     <main>
         <h2>"Music is everyone's possession. Only advertisers think people own it."</h2>
     </main>
-    <div id="BarSearch">
-        <img src="../SpotifyModel/images/glass.png" alt="glass" id="glass">
-        <input type="text" id="searchBar" placeholder="Type for search..." onkeyup="filterItems()">
-    </div>
+    <div id="bar1"></div>
+    <div id="bar2"></div>
     <div id="Items">
         <ul id="listitems">
             <a href="pages/artists.html">
-                <button>Artists</button><br><br>
+                <button id="btn1">Popular Artists</button><br><br>
             </a>
             <a href="pages/musics.html">
-                <button>Musics</button>
+                <button id="btn2">Trending songs</button>
             </a>
         </ul>
     </div>
+    <div id="tupacindexdiv">
+        <a href="pages/tupac.html">
+            <img src="images/2Pac.jpg" alt="2Pacindex" id="tupacindex">
+        </a>
+        <strong><h3>2Pac</h3></strong>
+    </div>
+    <div id="ovhindexdiv">
+        <div class="music-card">
+            <img src="images/overthehorizonimage.jpg" alt="ovhindex" id="ovhindex">
+            <a href="pages/overthehorizon.html">
+                <div class="play-button"></div>
+            </a>
+        </div>
+        <strong><h3>Over The Horizon</h3></strong>
+        <p>2Pac</p>
+    </div>
+    <a href="pages/playlists.html">
+        <button id="playlistsfirstbtn">Playlists</button>
+    </a>
     <script src="js/script.js"></script>
-    <script src="js/script2.js"></script>
+    <script src="js/darkmode.js"></script>
 </body>
 </html>

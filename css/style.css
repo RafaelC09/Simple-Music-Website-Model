@@ -5,18 +5,35 @@ header {
 }
 
 header img {
-    width: 150px;
-    height: 150px;
-}
-
-header h1 {
-    font-size: 64px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60px;
+    height: 60px;
 }
 
 main h2 {
+    position: absolute;
+    top: 13%;
     font-size: 32px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#bar1 {
+    background-color: #565656;
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 26%;
+    right: 0.2%;
+}
+
+#bar2 {
+    background-color: #565656;
+    height: 74%;
+    width: 2px;
+    display: block;
+    position: absolute;
+    right: 85%;
+    top: 26%;
 }
 
 .dark-mode {
@@ -30,18 +47,48 @@ main h2 {
     right: 125px;
     padding: 10px 20px;
     font-size: 16px;
-    border: none;
     cursor: pointer;
     border-radius: 50px;
     background-color: #4CAF50;
-    color: white;
+    color: black;
     margin-top: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3 ease;
+    border: none;
 }
 
 #toggle-theme:hover {
     background-color: #45a049;
+}
+
+#download-app-btn {
+    position: fixed;
+    top: 0;
+    right: 255px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: black;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3 ease;
+    border: none;
+}
+
+#download-app-btn:hover {
+    background-color: #45a049;
+}
+
+#BarSearch {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 #searchBar {
@@ -54,16 +101,122 @@ main h2 {
     margin: 20px auto;
 }
 
+#Items {
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 #Items button {
-    background-color: #4CAF50;
+    background-color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32px;
     width: 250px;
     height: 75px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    display: flex;
 }
 
 #Items button:hover {
-    background-color: #45a049;
+    background-color: #fff;
+}
+
+#Items button:first-child {
+    margin-bottom: 150px;
+}
+
+#tupacindex {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#tupacindexdiv {
+    position: absolute;
+    top: 38%;
+    left: 18%;
+    display: flex;
+    align-items: left;
+    align-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#tupacindexdiv img:first-child {
+    margin-bottom: -15px;
+}
+
+#tupacindexdiv h3 {
+    font-family: 'Copperplate', fantasy;
+}
+
+#ovhindex {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#ovhindexdiv {
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    display: flex;
+    align-items: left;
+    align-content: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#ovhindexdiv img:first-child {
+    margin-bottom: -15px;
+}
+
+#ovhindexdiv h3 {
+    font-family: 'Copperplate', fantasy;
+    margin-bottom: -15px;
+}
+
+#ovhindexdiv p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.play-button {
+    position: absolute;
+    top: 100px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.music-card:hover .play-button {
+    opacity: 1;
 }
 
 #glass {
@@ -319,14 +472,14 @@ input[type="password"] {
     top: 20px;
     right: 20px;
     background-color: #4CAF50;
-    color: white;
-    border: none;
+    color: black;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
+    border: none;
 }
 
 .create-account-btn:hover {
@@ -344,4 +497,78 @@ input[type="password"] {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#createplaylistbtn {
+    padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+#createplaylistbtn:hover {
+    background-color: #565656;
+}
+
+.playlist1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    visibility: hidden;
+}
+
+.playlist1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.textcontent3 {
+    max-width: 400px;
+}
+
+.textcontent3 h3 {
+    margin: 0;
+}
+
+.textcontent3 p {
+    margin: 5px 0;
+}
+
+#playlist1btn {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#playlist1btn:hover {
+    background-color: gray;
+}
+
+#playlistsfirstbtn {
+    background-color: #4CAF50;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    width: 250px;
+    height: 75px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 28%;
+    border: none;
+}
+
+#playlistsfirstbtn:hover {
+    background-color: #45a049;
 }
